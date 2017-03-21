@@ -221,7 +221,6 @@ var main = function (event) {
                     });
                 alexaSDK.APP_ID = APP_ID;
                 alexaSDK.resources = languageStrings;
-                alexaSDK.registerHandlers(newSessionHandlers);
                 alexaSDK.registerHandlers(newSessionHandlers, rsidSelectionHandlers);
                 return alexaSDK.execute();
             } catch (err) {
